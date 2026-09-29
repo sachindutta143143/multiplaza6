@@ -1,0 +1,14 @@
+# Railway deployment configuration
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm run build"
+nixpacksPlanVersion = 1
+
+[build.env]
+NIXPACKS_NODE_VERSION = "20.9.0"
+NODE_VERSION = "20.9.0"
+
+[deploy]
+startCommand = "npm run start"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
