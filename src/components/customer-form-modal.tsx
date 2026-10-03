@@ -86,6 +86,9 @@ export default function CustomerFormModal({
         <Field label="Notes">
           <Input value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} placeholder="Optional" />
         </Field>
+        <Field label="Notes">
+          <Input value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} placeholder="Optional" />
+        </Field>
       </div>
     </Modal>
   );
